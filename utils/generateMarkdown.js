@@ -25,15 +25,17 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseSection(license) {
+  var licenselink = `## Link
+`
   if (license === "MIT") {
-    licenselink = `[License: MIT](https://opensource.org/licenses/MIT)`;
+    licenselink += `[License: MIT](https://opensource.org/licenses/MIT)`;
   } else if (license === "Apache License 2.0") {
-    licenselink = `[License: Apache License](https://apache.org/licenses/License-2.0)`;
+    licenselink += `[License: Apache License](https://apache.org/licenses/License-2.0)`;
   } else if (license === "Mozilla Public License") {
-    licenselink = `[License: Mozilla Public License](https://opensource.org/licenses/MPL-2.0)`;
+    licenselink += `[License: Mozilla Public License](https://opensource.org/licenses/MPL-2.0)`;
   } else if (license === "GPL v3") {
-    licenselink = `[License: Mozilla Public License](https://gnp.org/licenses)`;
+    licenselink += `[License: Mozilla Public License](https://gnp.org/licenses)`;
   } else {
     return "";
   }
@@ -41,7 +43,7 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseLink(license) {
   if (license === "unlicensed") {
     return "";
   } else {
@@ -55,54 +57,67 @@ const badge = renderLicenseBadge(data.license);
 const licenselink = renderLicenseLink(data.license);
 const licenseSec = renderLicenseSection(data.license)
 
-  return `# ${data.ProjectTitle}
-  ### https:\\www.github.com/${data.github}
+  return `# ${data.title}
 
-  This Project is licensed under:
-  ${badge}${licenselink}
+https:\\www.github.com/${data.github}
 
-  ## Technology
-  ${data.technology}
 
-  ## Description
-  ${data.Description}
+### ${badge} 
 
-  ## Table of Contents:
 
-  * [Installation](#installation)
+## Description
+### ${data.description}
+--------------------
 
-  * [Usage](#usage)
+## Technology
+### HTML, CSS, Javascript
+--------------------
 
-  * [Contributing](#contributing)
+## Table of Contents:
 
-  * [Test](#test)
 
-  * [Questions](#questions)
+* [Installation](#installation)
 
-  ### Installations:
-  To ensure the program run open the terminal and run the following:
-  \`\`\`${data.installation}\`\`\`
+* [Usage](#usage)
 
-  ## Usage:
-  ${data.usage}
+* [Contributing](#Contribute)
+
+* [Test](#test)
+
+* [Questions](#questions)
+
+${licenselink}
+--------------------
+
+
+## Installations:
+to ensure the repo runs open the terminal and run the following: 
+\`\`\`${data.installation}\`\`\`
+
+--------------------
+
+## Usage:
+### ${data.usage} 
+--------------------
+
+## Test:
+### In order to run the repo, open the terminal and run the following: ${data.testCommand}
+--------------------
+
+## Contribute:
+### ${data.contribute}
+--------------------
+
+
+## This project is licensed under: 
+###${licenseSec}
+--------------------
+
+
+## Questions: 
+### if you have any question about the repo, contact Github: (https://www.github.com/${data.github})
+or E-mail: ${data.Email}`    
   
-  ## Test:
-  In order to run the Project open the terminal and run the following:
-  ${data.testCommand}
-
-  ## Contributing:
-  ${data.Contribute}
-
-  ## License:
-  ${licenseSec}
-
-  This Project is licensed under:
-  ${data.license}
-  
-  ### Questions:
-  If you have any questions about the repo, contact Github: (https://www.github.com/${data.github})
-  or E-mail: ${data.Email}
-`;
 }
 
 module.exports = generateMarkdown;

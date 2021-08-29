@@ -19,7 +19,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "E-mail",
+    name: "Email",
     message: "What is your E-mail?",
     validate: (value) => {
       if (value) {
@@ -31,7 +31,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "ProjectTitle",
+    name: "title",
     message: "What is your Project title?",
     validate: (value) => {
       if (value) {
@@ -43,7 +43,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "Description",
+    name: "description",
     message: "Please write a brief a description of your project",
   },
   {
@@ -64,13 +64,18 @@ const questions = [
     message: "what command should be run to install dependencies?",
   },
   {
-    type: "input",
-    name: "usage",
-    message: "what should the user know to run your program?",
+      type: "input",
+      name: "testCommand",
+      message: " What test command should be used to run the program"
   },
   {
     type: "input",
-    name: "Contribute",
+    name: "usage",
+    message: "any additonal usage information?",
+  },
+  {
+    type: "input",
+    name: "contribute",
     message:
       "How can others developers contribute to the repo?",
   },
@@ -82,9 +87,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, response) {
-  return fs.writeFile(fileName, JSON.stringify(response), (err) =>
+  return fs.writeFile(fileName, response, function (err) {
     err ? console.error(err) : console.log("Successfully wrote: " + fileName)
-  );
+  });
 }
 
 // TODO: Create a function to initialize app

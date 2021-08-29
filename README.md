@@ -1,1 +1,60 @@
-"# readme\n  ### https:\\www.github.com/jwill\n\n  This Project is licensed under:\n  [![License](https://img.shields.io/badge/License-MIT-blue.svg)]undefined\n\n  ## Technology\n  HTML,CSS,Javascript,Node\n\n  ## Description\n  a professional read me \n\n  ## Table of Contents:\n\n  * [Installation](#installation)\n\n  * [Usage](#usage)\n\n  * [Contributing](#contributing)\n\n  * [Test](#test)\n\n  * [Questions](#questions)\n\n  ### Installations:\n  To ensure the program run open the terminal and run the following:\n  ```node index.js```\n\n  ## Usage:\n  noen\n  \n  ## Test:\n  In order to run the Project open the terminal and run the following:\n  undefined\n\n  ## Contributing:\n  any\n\n  ## License:\n  * [License](#license)\n\n  This Project is licensed under:\n  MIT\n  \n  ### Questions:\n  If you have any questions about the repo, contact Github: (https://www.github.com/jwill)\n  or E-mail: undefined\n"
+# Professional Readme
+
+https:\www.github.com/Jwilliams
+
+
+### [![License](https://img.shields.io/badge/License-MIT-blue.svg)] 
+
+
+## Description
+### the objective of this readme generator is to make developing a readme for any project quick and efficient
+--------------------
+
+## Technology
+### HTML, CSS, Javascript
+--------------------
+
+## Table of Contents:
+
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Contributing](#Contribute)
+
+* [Test](#test)
+
+* [Questions](#questions)
+
+* [License](#license)
+--------------------
+
+
+## Installations:
+to ensure the repo runs open the terminal and run the following: 
+```inquirer```
+
+--------------------
+
+## Usage:
+### none 
+--------------------
+
+## Test:
+### In order to run the repo, open the terminal and run the following: node index.js
+--------------------
+
+## Contribute:
+### any
+--------------------
+
+
+## This project is licensed under: 
+###undefined
+--------------------
+
+
+## Questions: 
+### if you have any question about the repo, contact Github: (https://www.github.com/Jwilliams)
+or E-mail: jwill@yahoo.com
