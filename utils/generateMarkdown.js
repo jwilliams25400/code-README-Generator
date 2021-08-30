@@ -8,46 +8,21 @@ function renderLicenseBadge(license) {
   }
 }
 
-//   if(license === "MIT") {
-//     licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
-//   }
-//   else if (license === "Apache License 2.0") {
-//     return `![License: Apache License](https://img.shields.io/badge/License-Apache-green.svg)`
-//   }
-//   else if (license === "Mozilla Public License") {
-//     return `![License: Mozilla Public License](https://img.shields.io/badge/License-Mozilla-red.svg)`
-// }
-//   else if (license === "GPL v3") {
-//     return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`
-// }
-//   else if (license === "unlicensed") {
-//     return `![License: unlicense](https://img.shields.io/badge/License-unlicense-blue.svg)`
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  var licenselink = `## Link
-`
-  if (license === "MIT") {
-    licenselink += `[License: MIT](https://opensource.org/licenses/MIT)`;
-  } else if (license === "Apache License 2.0") {
-    licenselink += `[License: Apache License](https://apache.org/licenses/License-2.0)`;
-  } else if (license === "Mozilla Public License") {
-    licenselink += `[License: Mozilla Public License](https://opensource.org/licenses/MPL-2.0)`;
-  } else if (license === "GPL v3") {
-    licenselink += `[License: Mozilla Public License](https://gnp.org/licenses)`;
-  } else {
-    return "";
+  if (license !== "None") {
+    return ` [License](#license)`;
   }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === "unlicensed") {
-    return "";
-  } else {
-    return "* [License](#license)";
+  if(license !== "None") {
+    return `# License
+    project is Licensed under ${license}`
   }
 }
 
@@ -59,7 +34,7 @@ const licenseSec = renderLicenseSection(data.license)
 
   return `# ${data.title}
 
-https:\\www.github.com/${data.github}
+https://www.github.com/${data.github}
 
 
 ### ${badge} 
@@ -110,7 +85,7 @@ to ensure the repo runs open the terminal and run the following:
 
 
 ## This project is licensed under: 
-###${licenseSec}
+### ${licenseSec}
 --------------------
 
 

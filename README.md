@@ -1,13 +1,13 @@
-# Professional Readme
+# CODE-README-GENERATOR
 
-https:\www.github.com/Jwilliams
+https://www.github.com/JWilliams25400
 
 
-### [![License](https://img.shields.io/badge/License-MIT-blue.svg)] 
+### [![License](https://img.shields.io/badge/License-unlicensed-blue.svg)] 
 
 
 ## Description
-### the objective of this readme generator is to make developing a readme for any project quick and efficient
+### A repo designed to help user develop readme file for all their repo's in a quick and efficient manner
 --------------------
 
 ## Technology
@@ -27,13 +27,18 @@ https:\www.github.com/Jwilliams
 
 * [Questions](#questions)
 
-* [License](#license)
+# License
+    project is Licensed under unlicensed
+--------------------
+
+# Video tutorial
+https://drive.google.com/file/d/1xk0uLsDD-sTV8_Tb1IeVqU-2MRGHGUiH/view
 --------------------
 
 
 ## Installations:
 to ensure the repo runs open the terminal and run the following: 
-```inquirer```
+```npm i inquirer```
 
 --------------------
 
@@ -46,15 +51,15 @@ to ensure the repo runs open the terminal and run the following:
 --------------------
 
 ## Contribute:
-### any
+### send a email to repo developer listed below
 --------------------
 
 
 ## This project is licensed under: 
-###undefined
+###  [License](#license)
 --------------------
 
 
 ## Questions: 
-### if you have any question about the repo, contact Github: (https://www.github.com/Jwilliams)
+### if you have any question about the repo, contact Github: (https://www.github.com/JWilliams25400)
 or E-mail: jwill@yahoo.com

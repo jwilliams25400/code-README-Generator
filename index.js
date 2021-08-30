@@ -44,7 +44,7 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Please write a brief a description of your project",
+    message: "Please write a brief description of your project",
   },
   {
     type: "checkbox",
